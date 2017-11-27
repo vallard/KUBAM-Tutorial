@@ -53,7 +53,7 @@ Once the authentication has succeeded you will see that KUBAM is logged in.
 
 KUBAM logins persist.  All the data that you enter is stored in ```~/kubam/kubam.yaml``` file on the KUBAM server (utility1).  You can go back to your terminal and see this file now.  You will see that as you enter fields into the GUI it is saved in the ```kubam.yaml``` file in YAML form.
 
-This is great because it allows you to construct a kubam.yaml file before even seeing the system.  That way you can do a simple backup and restore without having to take time to fill out the form. 
+This is great because it allows you to construct a ```kubam.yaml``` file before even seeing the system.  That way you can do a simple backup and restore without having to take time to fill out the form. 
 
 ![kubam.yaml output](../images/kubam04.png)
 

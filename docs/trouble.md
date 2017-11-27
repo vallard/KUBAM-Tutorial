@@ -53,8 +53,22 @@ Things KUBAM doesn't like:
 * __SELinux__ - If you get some message that ISO files can't be mounted or don't have permissions, this is a sure sign that SELinux is running.  Turn it off.  Run ```getenforce``` to see if its enabled.  If it is disable it in ```/etc/sysconfig/selinux``` and restart your server.
 * Mapping incorrect OS versions.  If you say its CentOS 7.4 it better be CentOS 7.4. KUBAM doesn't do very good at error detection.  Working on that. 
 
+## 1.4 Disk Errors
 
-## 1.4 Where you can get help
+KUBAM uses storage profiles to create a RAID1 configuration.  Before associating the blade to the service profile, KUBAM attempts to configure the disks from JBOD to unconfigured good.  As such you may see an error message like the below:
+
+![error disks](../images/error01.png)
+
+Usually you can just wait about 5 minutes for this to clear and things will associate. 
+
+By checking in the __Equipment__ tab in UCS you might be able to see the servers in question with teal info warnings next to them.  
+
+![error servers](../images/error02.png)
+
+Here the servers FSM state trying to set the disks back to something KUBAM can use. It will finish in about 5 minutes.  If they still don't associate it may be something else.  We're working to make this easier and faster in the future. 
+
+
+## 1.5 Where you can get help
 
 * [Open Issues on Github](https://github.com/CiscoUcs/KUBaM/issues)
 * [Email](kubam-feedback@cisco.com)
