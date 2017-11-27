@@ -7,7 +7,7 @@ This repository contains the instructions for deploying KUBAM.  Perhaps you've n
 [KUBAM](https://kubam.io) is an [open source tool](https://github.com/CiscoUcs/KUBaM) for automatically deploying solutions on top of Cisco Unified Compute System (UCS).  
 
 #### UCS
-UCS is a product suite from Cisco that includes Intel Servers in blade and rack-mount form factor that are managed through a pair of Fabric Interconnects.  The advantages include simplification of management, future-proofing investment, and less money spent on network infrastructure. 
+UCS is a product suite from Cisco that includes Intel Servers in blade and rack-mount form factor that are managed through a pair of Fabric Interconnects.  The advantages include simplification of management, future-proofing investment, and less money spent on network infrastructure. Perhaps the biggest advantage is the ability to get things up fast.  Traditional servers require a lot to get started.  UCS goes faster.
 To learn more about Cisco Unified Computing System, please [go here](www.cisco.com/go/ucs)
 
 ## This Lab
