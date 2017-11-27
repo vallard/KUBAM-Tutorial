@@ -46,14 +46,18 @@ This will show the output of the nginx webserver that is embedded in kubam as we
 
 While the installation is happening we can watch this to see if there is any suspicious activity. 
 
-## 1.3 KUBAM Gotchas!
+## 1.3 KUBAM Web Server
+
+The ```kubam/kubam``` container is actually a webserver.  This webserver needs to be reachable from the CIMC and from the server network.  You can actually open up the web browser to [http://198.18.134.242/kubam/](http://198.18.134.242/kubam/) and see the files that will be requested from the CIMCs of the servers as well as the operating system when the server installs.  
+
+## 1.4 KUBAM Gotchas!
 
 Things KUBAM doesn't like:
 
 * __SELinux__ - If you get some message that ISO files can't be mounted or don't have permissions, this is a sure sign that SELinux is running.  Turn it off.  Run ```getenforce``` to see if its enabled.  If it is disable it in ```/etc/sysconfig/selinux``` and restart your server.
 * Mapping incorrect OS versions.  If you say its CentOS 7.4 it better be CentOS 7.4. KUBAM doesn't do very good at error detection.  Working on that. 
 
-## 1.4 Disk Errors
+## 1.5 Disk Errors
 
 KUBAM uses storage profiles to create a RAID1 configuration.  Before associating the blade to the service profile, KUBAM attempts to configure the disks from JBOD to unconfigured good.  As such you may see an error message like the below:
 
@@ -68,7 +72,7 @@ By checking in the __Equipment__ tab in UCS you might be able to see the servers
 Here the servers FSM state trying to set the disks back to something KUBAM can use. It will finish in about 5 minutes.  If they still don't associate it may be something else.  We're working to make this easier and faster in the future. 
 
 
-## 1.5 Where you can get help
+## 1.6 Where you can get help
 
 * [Open Issues on Github](https://github.com/CiscoUcs/KUBaM/issues)
 * [Email](kubam-feedback@cisco.com)
