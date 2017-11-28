@@ -23,8 +23,8 @@ Ready to start?  Let's go!
 ## Lab Modules
 
 1. [dCloud](docs/dcloud.md) - Here you will access your UCS resources to play with and try out. The rest of the labs assume that you are using this dCloud environment.
-* [KUBAM Installation](docs/install.md) - In this lab we will show the super simple way to install KUBAM.  So boring!
-* [Install Kubernetes with KUBAM](docs/menus.md) - In this lab we'll walk through the menus of the KUBAM web interface and provision Kubernetes on UCS.  
-* [Trobleshooting KUBAM](docs/trouble.md) - In this lab we'll talk about things that could go wrong, how to troubleshoot, and where to look for help. 
-* [Kubernetes](docs/kubernetes.md) - In this lab we'll kick the tires of our Kubernetes cluster, run some services, deployments, and pods and have some fun. 
-* [Contiv](docs/contiv.md) - In this lab we'll explore the features of Contiv and see how it helps our Kubernetes cluster.
+1. [KUBAM Installation](docs/install.md) - In this lab we will show the super simple way to install KUBAM.  So boring!
+1. [Install Kubernetes with KUBAM](docs/menus.md) - In this lab we'll walk through the menus of the KUBAM web interface and provision Kubernetes on UCS.  
+1. [Trobleshooting KUBAM](docs/trouble.md) - In this lab we'll talk about things that could go wrong, how to troubleshoot, and where to look for help. 
+1. [Kubernetes](docs/kubernetes.md) - In this lab we'll kick the tires of our Kubernetes cluster, run some services, deployments, and pods and have some fun. 
+1. [Contiv](docs/contiv.md) - In this lab we'll explore the features of Contiv and see how it helps our Kubernetes cluster.
