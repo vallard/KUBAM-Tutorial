@@ -24,7 +24,11 @@ This command should take a few minutes to grab the latest CentOS 7 ISO image.
 On the utility1 server generate a private/public key pair using the following: 
 
 ```
-ssh-keygen –t rsa # press Enter to accept all the defaults
+ssh-keygen –t rsa 
+```
+Just press Enter to accept all the defaults
+
+```
 cat ~/.ssh/id_rsa.pub 
 ```
 
