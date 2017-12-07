@@ -87,7 +87,7 @@ kubectl label nodes kubam01 nettype=contiv-master
 Now we can edit the ```kube-dns``` to run on this node.  We update the ```deployment``` of the node:
 
 ```
-kubect	edit deployment kube-dns -n kube-system
+kubectl edit deployment kube-dns -n kube-system
 ```
 This pulls up a VIM editor to edit the deployment.  Notice where we add the ```nodeSelector``` label.  Add yours around the same place.  
 
