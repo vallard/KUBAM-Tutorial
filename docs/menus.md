@@ -26,6 +26,8 @@ On the utility1 server generate a private/public key pair using the following:
 ```
 ssh-keygen –t rsa 
 ```
+_(some users have report copying and pasting doesn't work for some reason.  If that is the case, just type the commands.)_
+
 Just press Enter to accept all the defaults
 
 ```
@@ -154,6 +156,8 @@ While the machines are installing log into the utility1 server and add the three
 198.18.0.161 kubam02
 198.18.0.162 kubam03
 ```
+
+_Note:  You can use ```vi``` for this.  Press ```i``` copy and paste the lines to add, then press ```Esc``` and then write ```:wq``` to write and quit.  If you are new to ```vi``` there are great tutorials out there!_
 
 When the installation is finished, from the utility1 server you should be able to run ```ssh kubam01``` and not be prompted for a password.
 
