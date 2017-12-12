@@ -43,7 +43,7 @@ So easy.
 Next install Docker Compose.  Docker Compose provides a simple way to bring up multiple containers at the same time.  Since KUBAM is based on two containers that work together we simplify the installation using Docker Compose.  Perform the following on the utility1 server:
 
 ```
-curl -L https://github.com/docker/compose/releases/download/1.17.0/docker-compose-Linux-x86_64 \		  -o /usr/local/bin/docker-compose
+curl -O https://github.com/docker/compose/releases/download/1.17.0/docker-compose-Linux-x86_64 \		  -o /usr/local/bin/docker-compose
 ```
 
 Now make it executable:

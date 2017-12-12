@@ -160,19 +160,19 @@ Change the replica count from ```1``` to ```3```.
 Saving the file, then notice how many we have: 
 
 ```
-kubect get pods -o wide -w
+kubectl get pods -o wide -w
 ```
 You'll see 3 pods come on line now.  Let's kill one of the pods and see what happens: 
 
 ```
-kubect delete pod nginx-xxxxxxxxxx-xxxxx
+kubectl delete pod nginx-xxxxxxxxxx-xxxxx
 ```
 (note replace the xxx's with the number of one of your outputs.  It doesn't matter which pod you delete.)
 
 Now see how many pods you have: 
 
 ```
-kubect get pods -o wide -w
+kubectl get pods -o wide -w
 ```
 You still have 3!  What's going on?  Kubernetes knows you want three, so you have to scale it.  You can make it even larger without editing the file:
 

@@ -15,7 +15,7 @@ netctl version
 ```
 
 ```
-netctl ls
+netctl net ls
 ```
 This will show that two networks are created
 
