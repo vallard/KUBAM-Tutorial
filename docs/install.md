@@ -23,9 +23,17 @@ Install the Docker repository
 ```yum-config-manager –-add-repo https://download.docker.com/linux/centos/docker-ce.repo
 ```
 
+Remove existing docker
+
+```
+yum remove docker-common docker-client
+```
+(If that command fails, don't worry about it and go to next step)
+
 Install Docker
 
-```yum install –y docker-ce```
+```
+yum install –y docker-ce```
 
 Enable Docker
 
