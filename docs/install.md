@@ -112,12 +112,12 @@ Click OK to close the Pre-Login Banner, which cautions against firmware upgrades
 
 ![img](../images/UCS03.png)
 
-### Confirm blades 1-7 are unassociated
+### Confirm blades 7 are unassociated
 
 * In the Navigation pane, click __Equipment__ in the side menu.
 * Click on the __Servers__ tab
 
-Your output should look as follows
+Your output should look similar to below.  It may be that server 7 is associated.  That's ok, you'll just pick free blades to deploy with KUBAM. 
 
 ![img](../images/UCS04.png)
 
