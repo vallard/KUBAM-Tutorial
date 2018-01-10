@@ -28,7 +28,7 @@ docker ps
 If you get no errors, go to step 1.2.2
 
 No docker?  No problem.  Run the following.  Note:  Some of these commands you may not be able to copy and paste but may have to type out.  Try to copy and paste and if it fails try typing it out. Install Yum-Utils to be able to add another repo:```
-yum install –y yum-utils 
+yum install -y yum-utils
 ```
 Install the Docker repository
 
@@ -46,7 +46,7 @@ yum remove docker-common docker-client
 Install Docker
 
 ```
-yum install –y docker-ce```
+yum install -y docker-ce```
 
 Enable Docker
 
