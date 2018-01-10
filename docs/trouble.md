@@ -10,7 +10,7 @@ The KVM console of UCS is a good place to start.  While the nodes are installing
 * Select __Service Profiles__ and then the __kubam__ suborg.
 * Right click the service profile and select __KVM console__ to open the KVM.   
 
-![KVM console](../images/UCS05.png)
+![KVM console](../images/ucs05.png)
 
 You may want to leave this open.  As the server installs and comes up for the first time KUBAM kicks off an ansible script to the server to configure kubernetes.  You can watch the Ansible script work in the console.  You’ll see it install docker, kubernetes, as well as contiv for the container networking solution. 
 
