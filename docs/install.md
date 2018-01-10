@@ -15,12 +15,25 @@ ssh root@198.18.134.242
 ```
 ## 1.2 Install Prerequisites
 
-The prereqs for KUBAM are docker and docker compose.  Perform the following on the utility1 server.  First install Docker:Install Yum-Utils to be able to add another repo:```
+The prereqs for KUBAM are docker and docker compose.  Perform the following on the utility1 server.  
+
+### 1.2.1 Install Docker
+
+First, check if docker is installed: 
+
+```
+docker ps
+```
+
+If you get no errors, go to step 1.2.2
+
+No docker?  No problem.  Run the following.  Note:  Some of these commands you may not be able to copy and paste but may have to type out.  Try to copy and paste and if it fails try typing it out. Install Yum-Utils to be able to add another repo:```
 yum install –y yum-utils 
 ```
 Install the Docker repository
 
-```yum-config-manager –-add-repo https://download.docker.com/linux/centos/docker-ce.repo
+```
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 ```
 
 Remove existing docker
@@ -39,6 +52,8 @@ Enable Docker
 
 ```systemctl start dockersystemctl enable docker```
 So easy. 
+
+### 1.2.2 Install Docker Compose
 
 Next install Docker Compose.  Docker Compose provides a simple way to bring up multiple containers at the same time.  Since KUBAM is based on two containers that work together we simplify the installation using Docker Compose.  Perform the following on the utility1 server:
 
