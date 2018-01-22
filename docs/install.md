@@ -55,6 +55,12 @@ So easy.
 
 ### 1.2.2 Install Docker Compose
 
+Make sure docker is running:
+
+```systemctl start dockersystemctl enable docker
+```
+
+
 Next install Docker Compose.  Docker Compose provides a simple way to bring up multiple containers at the same time.  Since KUBAM is based on two containers that work together we simplify the installation using Docker Compose.  Perform the following on the utility1 server:
 
 ```
