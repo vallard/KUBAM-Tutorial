@@ -81,7 +81,15 @@ To install KUBAM we need to grab the docker compose file.  Run the following on 
 cd ~/
 curl -O https://raw.githubusercontent.com/CiscoUcs/KUBaM/master/docker-compose.yml 
 ```
-This will download the compose file (called ```docker-compose.yml```) that will be used to bring everything up.  Now run: 
+This will download the compose file (called ```docker-compose.yml```) that will be used to bring everything up.  You can have a look at it by running:
+
+```
+cat docker-compose.yml
+```
+
+You'll notice there are two services: The web service, which is the front end and the kubam service which is the KUBAM API server.  The KUBAM API server is where all the action takes place.  The Web service is just a better human interface to make KUBAM do what ever evil intentions you have. 
+
+Now run: 
 
 ```
 docker-compose up -d
